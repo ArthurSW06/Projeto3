@@ -25,42 +25,43 @@
     <main id="container-contato">
       <img src="../assets/mangle.gif" alt="gif" id="fungif">
         <!-- Início do formulário de contato -->
-        <div class="form">
+        <div class="contato">
           <form class="form" id="form">
 
             
             <!-- Campo de nome -->
             <article class="control">
-                <label for="name">Nome</label>
-                <input type="text" id="name" />
-                <!-- Ícones de sucesso e erro -->
-                <i class="success-icon"><img src="../assets/successo.svg" alt="" /></i>
-                <i class="error-icon"><img src="../assets/error.svg" alt="" /></i>
-                <!-- Mensagem de erro -->
-                <small>Erro !!!</small>
-              </article>
+              <label for="nome">Nome</label>
+              <input type="text" id="nome">
+              <i class="error"><img src="../assets/erro.svg"></i>
+             <small></small>
+          </article>
     
               <!-- Campo de email -->
-              <article class="control">
+              <article class="control">    
                 <label for="email">Email</label>
-                <input type="email" id="email" />
+                <input type="email" id="email">
+                <i class="error"><img src="../assets/erro.svg"></i>
+                <small></small>
+            </article>
+            <!-- campo da descriçao -->
+              <article class="control">    
+                <label for="descricao">Descrição</label>
+                <textarea type="text" name="descricao" id="descricao"></textarea>
+                <i class="error"><img src="../assets/erro.svg">
+                  <small></small>
+                
+          </article>      
                 <!-- Ícones de sucesso e erro -->
                 <i class="success-icon"><img src="../assets/successo.svg" alt="" /></i>
-                <i class="error-icon"><img src="../assets/error.svg" alt="" /></i>
-                <!-- Mensagem de erro -->
-                <small>Erro !!!</small>
-              </article>
-
-              <!-- Campo de descrição -->
-              <article class="control">
-                <label for="senha">Descrição</label>
-                <textarea type="text" id="descricao"></textarea>
+                <i class="error-icon"><img src="./assets/erro.svg" alt="" /></i>
+                
+       
                 <!-- Ícones de sucesso e erro -->
                 <i class="success-icon"><img src="../assets/successo.svg" alt="" /></i>
-                <i class="error-icon"><img src="../assets/error.svg" alt="" /></i>
-                <!-- Mensagem de erro -->
-                <small>Erro !!!</small>
-              </article>
+                <i class="error-icon"><img src="./assets/erro.svg" alt="" /></i>
+              
+            
 
               <!-- Botão de envio -->
               <button type="submit" onclick="chamar()">ENVIAR</button>
@@ -72,6 +73,6 @@
       </main>
     </body>
 </html>
-    
+    <script src="../js/contato.js"></script>
 </body>
 </html>
